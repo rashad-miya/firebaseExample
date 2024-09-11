@@ -1,0 +1,106 @@
+.flex {
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.sub-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.headline {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bolder;
+    color: #7c5a7c;
+}
+.line-height-regular {
+    line-height: 20px;
+    word-spacing: 1.5px;
+}
+.line-height-medium {
+    line-height: 25px;
+    word-spacing: 1.5px;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.mx-2 {
+    margin: 0 2rem;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.pb-1{
+    padding-bottom: 1rem;
+}
+
+

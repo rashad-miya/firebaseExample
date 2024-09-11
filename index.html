@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <!-- Firebase CDN -->
+    <!-- Firebase CDN (Version 8.x) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="https://kit.fontawesome.com/f25c563aa6.js" crossorigin="anonymous"></script>
+    <script src="scripts/indexScript.js"></script>
+    <script src="scripts/firebase.js"></script>
+    <title>Rashad portfolio website</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav-container">
+            <nav>
+                <img class="logo" src="images/logor.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <span class="close" onclick="closeMenu()"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                </ul>
+                <span class="menu" onclick="openMenu()"><i class="fa-solid fa-bars"></i></span>
+            </nav>
+        </div>
+
+        <div class="hero-container">
+            <div class="intro-section">
+                Hi, My name is <span class="my-name">Rashad</span>
+                <div class="profession">I am a passionate</div>
+                <div>Web Developer</div>
+                <span id="element"></span>
+                <div class="btn-container mt-1">
+                    <a class="btn" href="files/Rashadmiya's curriculum vitae.pdf" download>Download Resume</a>
+                    <a href="./githubpage" class="btn">Visit Github</a>
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="images/resized.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copyright mt-2">
+        Copyright &copy;Rashad Miya
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Skill includes: React.js, React Native, Next.js, Node.js, Express.js.'],
+            typeSpeed: 100,
+
+        });
+    </script>
+    <script>
+
+        function handleNavLinkClick(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            document.getElementById(targetId).scrollIntoView({
+                behavior: "smooth"
+            });
+            let sideMenu = document.getElementById('sidemenu');
+            sideMenu.style.right = "-70%"
+        }
+
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(link => {
+            link.addEventListener("click", handleNavLinkClick);
+        });
+    </script>
+    <script>
+        testFirebase();
+    </script>
+</body>
+
+</html>
