@@ -40,6 +40,12 @@
     font-weight: 500;
     line-height: 20px;
 }
+.paragraph{
+    font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+    width: 100%;
+    text-align: left;
+}
 .headline {
     font-size: 21px;
     line-height: 30px;
